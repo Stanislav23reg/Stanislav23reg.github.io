@@ -20,13 +20,14 @@ h2 {
 	padding: 0;
 }
 h1 {
-	
+	text-align: center;
 }
 li {
     list-style-type: none;
 }
 .content_wrapper {
 	padding: 10px;
+    font-family: sans-serif;
 }
 
 
@@ -100,7 +101,7 @@ li {
 	margin-right: 5px;
 }
 .header_logo {
-    background-color: rgba(240, 20, 160, 0.9);
+    background-color: rgba(240, 20, 160);
     margin-top: 42px;
     display: flex;
     justify-content: center;
@@ -308,11 +309,16 @@ nav {
 /*главная страница*/
 
 .index_promo img,
-.index_promo iframe {
+.index_promo_map {
 	height: auto;
 	width: 100%;
 	display: block;
-	box-shadow: 0 0 30px 1px rgba(255, 255, 255, 0.4);
+	box-shadow: 0 0 10px 1px #464646;
+    margin: 20px 0;
+}
+iframe {
+    height: 100%;
+    width: 100%;
 }
 .service_card img {
 	height: auto;
