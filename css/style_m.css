@@ -21,6 +21,7 @@ h2 {
 }
 h1 {
 	text-align: center;
+    margin-bottom: 20px;
 }
 li {
     list-style-type: none;
@@ -308,18 +309,52 @@ nav {
 
 /*главная страница*/
 
-.index_promo img,
-.index_promo_map {
+.index_promo img {
 	height: auto;
 	width: 100%;
 	display: block;
 	box-shadow: 0 0 10px 1px #464646;
     margin: 20px 0;
 }
-iframe {
-    height: 100%;
-    width: 100%;
+.index_promo a {
+    position: relative;
+    display: block;
 }
+.index_promo_map:before {
+    content: "Открыть в Картах";
+    display: block;
+    width: 130px;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    z-index: 2;
+    font-size: 15px;
+}
+.index_promo p {
+    text-align: justify;
+}
+.index_promo span:before,
+.service_titlle:before {
+	content: "";
+	background: url("../img/icon/drawn.gif");
+	background-size: cover;
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
 .service_card img {
 	height: auto;
 	width: 100%;
