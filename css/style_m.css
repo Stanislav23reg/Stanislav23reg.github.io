@@ -95,15 +95,39 @@ li {
 	content: "";
 	background: url("../img/icon/phone_ico.png");
 	display: block;
-	height: 27px;
-	width: 27px;
+	height: 18px;
+	width: 18px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
 }
+.header_adres {
+    display: flex;
+	margin: auto 0;
+    background-color: rgba(240, 20, 160);
+    justify-content: center;
+    margin-top: 42px;
+    padding: 5px;
+}
+.header_adres a {
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin: auto 0;
+}
+.header_adres:before {
+    content: "";
+    background: url("../img/icon/place_ico.png");
+	display: block;
+	height: 21px;
+	width: 21px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+    filter: invert(1);
+}
 .header_logo {
     background-color: rgba(240, 20, 160);
-    margin-top: 42px;
     display: flex;
     justify-content: center;
     padding: 5px 0;
@@ -327,8 +351,8 @@ nav {
     text-align: center;
     background-color: #fff;
     position: absolute;
-    top: 25px;
-    left: 15px;
+    top: 10px;
+    left: 10px;
     z-index: 2;
     font-size: 15px;
 }
@@ -338,7 +362,7 @@ nav {
 .index_promo span:before,
 .service_titlle:before {
 	content: "";
-	background: url("../img/icon/drawn.gif");
+	background: url("../img/icon/draw.png");
 	background-size: cover;
 	display: inline-block;
 	height: 32px;
