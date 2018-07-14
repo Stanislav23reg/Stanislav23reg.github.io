@@ -298,7 +298,7 @@ li {
 	text-align: justify;
 }
 .index_promo img,
-.index_promo iframe {
+.index_promo_map {
 	height: 332px;
 	width: 500px;
 	display: block;
