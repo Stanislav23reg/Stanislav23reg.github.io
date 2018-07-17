@@ -1,7 +1,6 @@
 /*общие*/
 body {
 	margin: 0 auto;
-    color: #464646;
 }
 .disabled {
 	display: none;
@@ -19,18 +18,8 @@ body {
 a {
 	text-decoration: none;
 }
-h1,
-h2 {
-	margin: 0;
-	padding: 0;
-}
-h1 {
+h1, h2 {
 	text-align: center;
-    margin-bottom: 20px;
-}
-.content_wrapper {
-	padding: 10px;
-    font-family: sans-serif;
 }
 
 
@@ -38,86 +27,56 @@ h1 {
 /*шапка*/
 
 
-.header_contacts {
-	width: 100%;
+
+
+header {
+    background-color: #f0f;
+}
+.header_logo {
     display: flex;
-    justify-content: flex-start;
-    background-color: #fff;
-    position: fixed;
-	top: 0;
-	z-index: 4;
-    padding: 5px;
+    justify-content: center;
+    margin-top: 32px;
+    padding: 15px 0;
 }
-.header_social {
-	display: flex;
+.header_logo img {
+    display: block;
+    width: 115;
+    height: 130;
+    margin-right: 20px;
 }
-.header_social a {
-	display: block;
-	margin: auto 10px;
-}
-.header_vk {
-	height: 32px;
-	width: 32px;
-	background: url("../img/icon/vk_ico.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-.header_instagram {
-	height: 27px;
-	width: 27px;
-	background: url("../img/icon/instagram_ico.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-.header_youtube {
-	height: 32px;
-	width: 32px;
-	background: url("../img/icon/youtube_ico.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-.header_vk:active,
-.header_instagram:active,
-.header_youtube:active {
-	filter: invert(0.5);
-}
-.header_phone {
-	display: flex;
-	margin: auto 0;
-}
-.header_phone span {
+.header_logo div {
     margin: auto 0;
-	color: #000;
-    font-weight: bold;
-    font-family: sans-serif;
-    text-decoration: none;
-    cursor: default;
 }
-.header_phone:before {
-	content: "";
-	background: url("../img/icon/phone_ico.png");
-	display: block;
-	height: 18px;
-	width: 18px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	margin-right: 5px;
+.header_logo_name {
+    display: block;
+    text-transform: uppercase;
+	font-size: 30px;
+    color: #fff;
+}
+.header_logo_studio {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+.header_contacts {
+    position: relative;
 }
 .header_adres {
     display: flex;
-	margin: auto 0;
-    background-color: rgba(240, 20, 160);
     justify-content: center;
-    margin-top: 42px;
-    padding: 5px;
+    padding-bottom: 15px;
 }
 .header_adres a {
-    color: #fff;
-    font-family: sans-serif;
-    text-transform: capitalize;
+    display: flex;
     margin: auto 0;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: capitalize;
 }
-.header_adres:before {
+.header_adres a:before {
     content: "";
     background: url("../img/icon/place_ico.png");
 	display: block;
@@ -125,26 +84,44 @@ h1 {
 	width: 21px;
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
     filter: invert(1);
+    margin-right: 5px;
 }
-.header_logo {
-    background-color: rgba(240, 20, 160);
+.header_phone {
     display: flex;
     justify-content: center;
-    padding: 15px 0;
+    height: 32px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
 }
-.header_logo img {
-    display: block;
-    margin-right: 20px;
-}
-.header_logo span {
-    display: block;
-	text-transform: uppercase;
-	font-size: 30px;
-    color: #fff;
+.header_phone a {
+    display: flex;
     margin: auto 0;
+    color: #000;
+    font-weight: bold;
+    font-family: sans-serif;
 }
+.header_phone a:before {
+	content: "";
+	background: url("../img/icon/phone_ico.png");
+	display: block;
+    margin: auto 0;
+	height: 18px;
+	width: 18px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+}
+.header_social {
+    display: none;
+}
+
+
+/*меню*/
+
+
 .nav_wrapper {
  	position: relative;
 }
@@ -155,13 +132,13 @@ h1 {
 	background-size: contain;
 	display: block;
 	position: fixed;
-	right: 5px;
-	top: 5px;
+	right: 10px;
+	top: 0;
     z-index: 5;
 }
 nav {
 	display: none;
-	background-color: rgba(240, 20, 160);
+	background-color: #f0f;
     width: 100%;
     text-align: center;
     z-index: 4;
@@ -189,196 +166,33 @@ nav li {
 	background-size: contain;
     filter: invert(1);
 }
-.menu_active {
+.menu a {
+    display: block;
+    padding: 10px;
     color: #fff;
-    font-size: 20px;
-    font-family: sans-serif;
-    display: block;
-    padding: 10px 0;
+    text-transform: uppercase;
     border-bottom: 1px solid #fff;
-    text-transform: uppercase;
-}
-.menu_active:active {
-    color: #464646;
-}
-.slider_wrapper {
-	height: 400px;
-	width: 100%; 
-	position: relative;
-}
-.slider_wrapper input {
-	display: none;
-}
-.slider {
-	height: inherit;
-	width: inherit;
-}
-.slides {
-    position: relative;
-}
-.slide1 {
-    background: radial-gradient(at 180px 120px, #fff, #dcdcdc);
-}
-.slide1_text {    
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 25px;
-    z-index: 3;
-}
-.slide1_text:before {
-    content: "набор в группы";
-    color: #464646;
-    font-size: 25px;
-    text-decoration: underline;
-    text-transform: uppercase;
-    font-weight: bold;
-    display: block;
     font-family: sans-serif;
 }
-.slide1_text:after {
-    content: "подробнее";
-    color: #464646;
-    font-size: 20px;
-    text-transform: uppercase;
-    display: block;
-    font-family: sans-serif;
-    margin-top: 40px;
-}
-.slide1_img {
-	height: 300px;
-	width: 320px;
-	background: url("../img/service/pole.png");
-	background-size: cover;
-    display: block;
-    position: absolute;
-    bottom: 50px;
-    right: 25px;
-    z-index: 2;
-}
-.slide2 {
-    background-color: hotpink;
-    }
-.slide3 {
-    
-    }
-.slider_wrapper .controls {
-	left: 50%;
-	margin-left: -64.75px;
-	position: absolute;
-    bottom: 20px;
-    z-index: 2;
-}
-
-.slider_wrapper label {
-	cursor: pointer;
-	display: inline-block;
-	height: 8px;
-	margin: 25px 12px 0 16px;
-	position: relative;
-	width: 8px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-}
-
-.slider_wrapper label:after {
-	border: 2px solid #464646;
-	content: " ";
-	display: block;
-	height: 12px;
-	left: -4px;
-	position: absolute;
-	top: -4px;
-	width: 12px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-}
-.slider_wrapper label {
-	cursor: pointer;
-	display: inline-block;
-	height: 8px;
-	margin: 25px 12px 0 16px;
-	position: relative;
-	width: 8px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-	-webkit-transition: background ease-in-out .5s;
-	-moz-transition: background ease-in-out .5s;
-	-o-transition: background ease-in-out .5s;
-	transition: background ease-in-out .5s;
-}
-.slider_wrapper label:hover, 
-#slide1:checked ~ .controls label:nth-of-type(1),
-#slide2:checked ~ .controls label:nth-of-type(2),
-#slide3:checked ~ .controls label:nth-of-type(3) {
-	background: #464646;
-}
-.slides {
-	height: inherit;
-	opacity: 0;
-	position: absolute;
-	width: inherit;
-	z-index: 0;
-	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-}
-
-#slide1:checked ~ .slider > .slide1,
-#slide2:checked ~ .slider > .slide2,
-#slide3:checked ~ .slider > .slide3 {
-	opacity: 1;
-	z-index: 1;
-}
 
 
 
-/*главная страница*/
+/*главная*/
 
-.index_promo img {
-	height: auto;
-	width: 100%;
-	display: block;
-	box-shadow: 0 0 10px 1px #464646;
-    margin: 20px 0;
-}
-.index_promo a {
-    position: relative;
-    display: block;
-}
-.index_promo_map:before {
-    content: "Открыть в Картах";
-    display: block;
-    width: 130px;
-    text-align: center;
-    background-color: #fff;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 2;
-    font-size: 15px;
-}
-.index_promo p {
-    text-align: justify;
-}
-.index_promo span:before,
-.service_titlle:before {
-	content: "";
-	background: url("../img/icon/draw.png");
-	background-size: cover;
-	display: inline-block;
-	height: 32px;
-	width: 32px;
-	margin-right: 10px;
-	vertical-align: middle;
-}
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
 
 
 
@@ -394,16 +208,23 @@ nav li {
 	filter: drop-shadow(0 0 30px #000);
 }
 
-/*пол дэнс*/
+
 
 .video {
-    position:relative;padding-bottom:56.25%;padding-top:25px;height:0;
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:25px;
+    height:0;
 }
 .video iframe {
-    position:absolute;top:0;left:0;width:100%;height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
 
 
 @media (min-width: 500px) and (max-width: 600px) {
     
-}
+}*/

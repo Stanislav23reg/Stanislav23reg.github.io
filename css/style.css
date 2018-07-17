@@ -1,4 +1,219 @@
 /*общие*/
+
+body {
+    margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+.content_wrapper {
+    display: flex;
+}
+
+
+
+
+
+
+/*шапка*/
+
+header {
+    background-color: #f0f;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.header_logo {
+    display: flex;
+    justify-content: center;
+}
+.header_logo img {
+    display: block;
+    width: 115;
+    height: 130;
+    margin-right: 20px;
+}
+.header_logo div {
+    margin: auto 0;
+}
+.header_logo_name {
+    display: block;
+    text-transform: uppercase;
+	font-size: 30px;
+    color: #fff;
+}
+.header_logo_studio {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+
+
+.header_contacts {
+    margin: auto 0;
+}
+.header_adres {
+    display: flex;
+    justify-content: flex-end;
+}
+.header_adres a {
+    display: flex;
+    margin: auto 0;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+}
+.header_adres a:hover {
+    color: #464646;
+}
+.header_adres a:hover:before {
+    filter: invert(0.3);
+}
+.header_adres a:active {
+    color: #000;
+}
+.header_adres a:active:before {
+    filter: invert(0);
+}
+.header_adres a:before {
+    content: "";
+    background: url("../img/icon/place_ico.png");
+	display: block;
+	height: 21px;
+	width: 21px;
+	background-size: contain;
+	background-repeat: no-repeat;
+    filter: invert(1);
+    margin-right: 5px;
+}
+.header_phone {
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    width: 100%;
+    margin: 10px 0;
+}
+.header_phone a {
+    display: flex;
+    margin: auto 0;
+    color: #fff;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+.header_phone a:before {
+	content: "";
+	background: url("../img/icon/phone_ico.png");
+	display: block;
+    margin: auto 0;
+	height: 23px;
+	width: 23px;
+	background-size: contain;
+	background-repeat: no-repeat;
+    filter: invert(1);
+    margin-right: 10px;
+}
+.header_phone a:hover {
+    color: #464646;
+}
+.header_phone a:hover:before {
+    filter: invert(0.3);
+}
+.header_phone a:active {
+    color: #000;
+}
+.header_phone a:active:before {
+    filter: invert(0);
+}
+.header_social {
+	display: flex;
+    justify-content: flex-end;
+}
+.header_social a {
+	display: block;
+	margin: auto 10px;
+}
+.header_vk {
+	height: 32px;
+	width: 32px;
+	background: url("../img/icon/vk_ico.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	filter: invert(1);
+}
+.header_instagram {
+	height: 23px;
+	width: 23px;
+	background: url("../img/icon/instagram_ico.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	filter: invert(1);
+}
+.header_youtube {
+	height: 30px;
+	width: 30px;
+	background: url("../img/icon/youtube_ico.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	filter: invert(1);
+}
+.header_vk:hover,
+.header_instagram:hover,
+.header_youtube:hover {
+	filter: invert(0.3);
+}
+.header_vk:active,
+.header_instagram:active,
+.header_youtube:active {
+	filter: invert(0);
+}
+
+
+
+
+/*меню*/
+
+
+.nav_wrapper {
+    width: 500px;
+    background-color: #f0f;
+}
+#nav_burger {
+	display: none;
+}
+nav li {
+    list-style-type: none;
+}
+.menu_service_submenu {
+    display: none;
+}
+.menu_service_wrapper {
+    cursor: pointer;
+    display: flex;
+}
+.menu_service_wrapper:before {
+    content: "";
+	background: url("../img/icon/burger_ico.gif");
+	display: block;
+    margin: auto 0;
+	height: 20px;
+	width: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#menu_service {
+	display: none;
+}
+#menu_service:checked ~ .menu_service_submenu {
+	display: block;
+}
+
+
+
+/*
 body {
 	margin: 0 auto;
 	background: url("../img/background_desktop.jpg");
@@ -40,21 +255,10 @@ li {
 
 
 
-/*шапка*/
 
-.header_top {
-	background-color: rgba(240, 20, 160, 0.9);
-	display: flex;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	justify-content:space-between;
-	z-index: 4;
-    min-width: 980px;
-}
-#nav_burger {
-	display: none;
-}
+
+
+
 .menu {
 	display: flex;
 }
@@ -88,47 +292,7 @@ li {
 .header_top_contacts {
 	display: flex;
 }
-.header_social {
-	display: flex;
-}
-.header_social a {
-	display: block;
-	margin: auto 10px;
-}
-.header_vk {
-	height: 25px;
-	width: 25px;
-	background: url("../img/icon/vk_ico.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	filter: invert(1);
-}
-.header_instagram {
-	height: 20px;
-	width: 20px;
-	background: url("../img/icon/instagram_ico.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	filter: invert(1);
-}
-.header_youtube {
-	height: 25px;
-	width: 25px;
-	background: url("../img/icon/youtube_ico.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	filter: invert(1);
-}
-.header_vk:hover,
-.header_instagram:hover,
-.header_youtube:hover {
-	filter: invert(0);
-}
-.header_vk:active,
-.header_instagram:active,
-.header_youtube:active {
-	filter: invert(0.5);
-}
+
 .header_phone {
 	display: flex;
 	text-decoration: none;
@@ -284,7 +448,7 @@ li {
 
 
 
-/*главная страница*/
+
 
 
 .index_promo {
@@ -355,4 +519,4 @@ li {
 }
 @media (min-width: 1200px) {
     
-}
+}*/
