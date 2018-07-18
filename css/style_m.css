@@ -138,7 +138,7 @@ header {
 }
 nav {
 	display: none;
-	background-color: #f0f;
+	background-color: #fff;
     width: 100%;
     text-align: center;
     z-index: 4;
@@ -167,11 +167,12 @@ nav li {
     filter: invert(1);
 }
 .menu a {
+    background-color: #f0f;
     display: block;
-    padding: 10px;
+    padding: 7px;
     color: #fff;
     text-transform: uppercase;
-    border-bottom: 1px solid #fff;
+    margin-bottom: 3px;
     font-family: sans-serif;
 }
 
