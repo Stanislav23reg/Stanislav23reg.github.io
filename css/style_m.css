@@ -5,7 +5,6 @@ body {
 .disabled {
 	display: none;
 }
-
 .uppercase {
 	text-transform: uppercase;
 }
@@ -50,8 +49,9 @@ header {
 .header_logo_name {
     display: block;
     text-transform: uppercase;
-	font-size: 30px;
+	font-size: 40px;
     color: #fff;
+    text-align: center;
 }
 .header_logo_studio {
     display: block;
@@ -63,29 +63,6 @@ header {
 
 .header_contacts {
     position: relative;
-}
-.header_adres {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 15px;
-}
-.header_adres a {
-    display: flex;
-    margin: auto 0;
-    font-family: sans-serif;
-    color: #fff;
-    text-transform: capitalize;
-}
-.header_adres a:before {
-    content: "";
-    background: url("../img/icon/place_ico.png");
-	display: block;
-	height: 21px;
-	width: 21px;
-	background-size: contain;
-	background-repeat: no-repeat;
-    filter: invert(1);
-    margin-right: 5px;
 }
 .header_phone {
     display: flex;
@@ -203,7 +180,7 @@ nav li {
     display: flex;
     justify-content: flex-end;
     margin-right: 40px;
-    color: #f00;
+    color: #DA70D6;
     font-size: 20px;
     font-weight: bold;
     font-family: sans-serif;
