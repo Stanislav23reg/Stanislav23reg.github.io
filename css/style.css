@@ -29,7 +29,13 @@ h1 {
     font-family: sans-serif;
     font-size: 25px;
 }
-
+.content_caption {
+    font-family: sans-serif;
+    font-size: 25px;
+    display: block;
+    font-weight: bold;
+    margin: 50px 50px 20px;
+}
 
 
 
@@ -42,6 +48,7 @@ header {
     padding: 10px 30px;
     border-bottom: 1px solid #D3D3D3;
     box-shadow: 0 6px 6px -4px #DCDCDC;
+    min-width: 864px;
 }
 .header_logo {
     display: flex;
@@ -55,62 +62,66 @@ header {
 }
 .header_logo_name {
     display: block;
-	font-size: 18px;
     font-weight: bold;
     font-family: sans-serif;
     margin: auto 0;
 }
-
-
-
-
-.header_contacts {
+.header_adres {
+    display: block;
+    color: #000;
+    font-family: sans-serif;
     margin: auto 0;
-    display: flex;
-    justify-content: space-between;
+}
+.header_adres:hover {
+    color: #a9a9a9;
+}
+.header_adres:active {
+    color: #000;
 }
 .header_social {
 	display: flex;
     justify-content: space-between;
-    margin-right: 70px;
 }
 .header_social a {
 	display: block;
 	margin: auto 10px;
 }
 .header_vk {
-	height: 28px;
-	width: 28px;
+	height: 30px;
+	width: 30px;
 	background: url("../img/icon/vk_ico.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	filter: invert(0.5);
+	filter: grayscale(100%);
+    transition: 0.6s;
 }
 .header_instagram {
-	height: 22px;
-	width: 22px;
+	height: 30px;
+	width: 30px;
 	background: url("../img/icon/instagram_ico.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	filter: invert(0.5);
+	filter: grayscale(100%);
+    transition: 0.6s;
 }
 .header_youtube {
-	height: 27px;
-	width: 27px;
+	height: 30px;
+	width: 30px;
 	background: url("../img/icon/youtube_ico.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	filter: invert(0.5);
+	filter: grayscale(100%);
+    transition: 0.6s;
 }
 .header_vk:hover,
 .header_instagram:hover,
 .header_youtube:hover {
-	filter: invert(0.3);
+	filter: none;
 }
 .header_vk:active,
 .header_instagram:active,
 .header_youtube:active {
-	filter: invert(0);
+	filter: grayscale(50%);
 }
 .header_tel {
     margin-bottom: 10px;
@@ -138,7 +149,7 @@ header {
 }
 .header_mail a:before {
     content: "";
-	background: url("../img/icon/email.png");
+	background: url("../img/icon/question.png");
 	display: block;
     margin: auto 0;
 	height: 25px;
@@ -167,6 +178,7 @@ aside {
 .nav_wrapper {
     height: 100%;
     width: 300px;
+    margin-top: 10px;
 }
 #nav_burger {
 	display: none;
@@ -177,12 +189,6 @@ aside {
     text-transform: capitalize;
     padding: 0;
     margin: 0;
-    position: fixed;
-    top: 91px;
-    width: 300px;
-}
-.menu:first-child {
-    border-top: 1px solid #D3D3D3;
 }
 .menu li {
     list-style-type: none;
@@ -200,11 +206,9 @@ aside {
 .menu a:hover {
     color: #a9a9a9;
 }
-
 .menu a:active {
     color: #000;
 }
-
 
 
 
@@ -212,6 +216,17 @@ aside {
 
 
 
+
+
+.offer_content {
+    margin: 0 auto;
+    background: url(../img/offer/offer.jpg);
+    background-size: contain;
+	background-repeat: no-repeat;
+    display: block;
+    height: 451px;
+    width: 940px;
+}
 .service {
     width: 878px;
     margin: 0 auto;
@@ -221,54 +236,29 @@ aside {
     display: inline-block;
     margin: 10px;
     padding: 10px;
-    width: 248px;
-    border: 1px solid #D3D3D3;
+    width: 250px;
+    
 }
 .service_card:hover.service_card img {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    transition: 0.8s;
 }
 .service_card:hover .service_name {
     color: #a9a9a9;
 }
 .service img {
     filter: drop-shadow(0 0 40px #464646);
-    width: 250px;
+    width: 100%;
     height: auto;
 }
 .service_name {
     display: block;
     color: #000;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 25px;
     font-family: sans-serif;
     margin: 15px 20px;
-}
-.service_price {
-    display: flex;
-    justify-content: flex-start;
-    color: #DDA0DD;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: sans-serif;
-    margin-left: 20px;
-}
-.service_price:before {
-    content: "от";
-    color: #000;
-    font-size: 15px;
-    font-weight: 300;
-    margin-right: 5px;
-    line-height: 34px;
-}
-.service_price:after {
-    content: "";
-    background: url("../img/icon/rouble.png");
-	display: block;
-    margin: auto 0;
-	height: 15px;
-	width: 15px;
-	background-size: contain;
-	background-repeat: no-repeat;
+    text-align: center;
 }
 
 
@@ -282,7 +272,6 @@ aside {
     padding: 30px 100px;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
 }
 .index_contact_form span {
     font-size: 25px;
@@ -290,16 +279,16 @@ aside {
     color: #fff;
     display: flex;
     margin-bottom: 15px;
-    height: 32px;
-    line-height: 32px;
+    height: 42px;
+    line-height: 42px;
 }
 .index_contact_form span:before {
     content: "";
-	background: url("../img/icon/email.png");
+	background: url("../img/icon/edit.png");
 	display: block;
     margin: auto 0;
-	height: 32px;
-	width: 32px;
+	height: 42px;
+	width: 42px;
 	background-size: contain;
 	background-repeat: no-repeat;
     margin-right: 10px;
@@ -340,10 +329,159 @@ aside {
 
 
 
+.index_map {
+    display: block;
+    height: 451px;
+    width: 940px;
+    margin: 0 auto 50px;
+}
+.index_map_m {
+    display: none;
+}
+
+
+
+
+
+/*подвал*/
+
+
+footer {
+    font-family: sans-serif;
+    background: #666;
+    padding-top: 15px;
+}
+.footer_button {
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    margin-left: 30px;
+    width: 200px;
+}
+.footer_button:before {
+    content: "";
+    display: block;
+    height: 18px;
+	width: 18px;
+	background: url("../img/icon/arrow_up.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	filter: invert(1);
+    margin-right: 10px;
+}
+.footer_middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.footer_contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+.footer_tel {
+    margin-bottom: 10px;
+}
+.footer_tel {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+    pointer-events: none;
+    cursor: default;
+    color: #fff;
+}
+.footer_mail {
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    line-height: 32px;
+    font-size: 20px;
+}
+.footer_mail:active {
+    color: #000;
+}
+.footer_mail:before {
+    content: "";
+	background: url("../img/icon/email.png");
+	display: block;
+    margin: auto 0;
+	height: 32px;
+	width: 32px;
+	background-size: contain;
+	background-repeat: no-repeat;
+    margin-right: 10px;
+    filter: invert(1);
+}
+.footer_mail:active.footer_mail:before {
+    filter: invert(0);
+}
+
+
+
+
+
+
+
+.footer_copyright {
+    background: #464646;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    display: block;
+}
+
+.footer_social {
+	display: flex;
+}
+.footer_social a {
+	display: block;
+	margin: auto 20px;
+}
+.footer_vk {
+	height: 34px;
+	width: 48px;
+	background: url("../img/icon/vk_ico.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	filter: invert(0.8);
+}
+.footer_instagram {
+	height: 26px;
+	width: 26px;
+	background: url("../img/icon/instagram_ico.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	filter: invert(0.8);
+}
+.footer_youtube {
+	height: 31px;
+	width: 31px;
+	background: url("../img/icon/youtube_ico.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	filter: invert(0.8);
+}
+.footer_vk:active,
+.footer_instagram:active,
+.footer_youtube:active {
+	filter: invert(0);
+}
+
+
+
+
 
 @media (max-width: 1294px) {
     .service {
         width: 584px;
+    }
+    .offer_content,
+    .index_map {
+        height: 299px;
+        width: 623px;
     }
 }
 
