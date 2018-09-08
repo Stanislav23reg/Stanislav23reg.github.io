@@ -184,7 +184,7 @@ nav li {
     padding-top: 124%;
 }
 .offer_content {
-  position: absolute;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -400,14 +400,58 @@ footer {
 
 
 @media screen and (min-width: 768px), (orientation: landscape) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        margin-top: 0;
+    }
     .header_logo {
         display: flex;
-        justify-content: center;
+        margin-left: 50px;
     }
     .header_logo img {
-        width: 160px;
-        height: 70px;
-        margin-right: 40px;
+        width: 120px;
+        height: 53px;
+        margin: auto 0;
+    }
+    .header_logo_name {
+        font-size: 16px;
+        margin: auto 0;
+    }
+    .header_adres {
+        font-size: 16px;
+        margin: auto 0;
+    }
+    .header_adres:before {
+        display: none;
+    }
+    .header_tel {
+        position: static;
+        border-bottom: none;
+    }
+    .header_tel a {
+        font-size: 16px;
+        margin: auto 0;
+    }
+    .header_mail {
+        display: block;
+    }
+    .nav_burger_wrapper {
+        position: absolute;
+        top: -100px;
+    }
+    .offer_wrapper {
+        padding-top: 48.2%;
+    }
+    .offer_content {
+        background: url(../img/offer/offer.jpg);
+        background-size: contain;
+	    background-repeat: no-repeat;
+    }
+    .content_caption {
+        text-align: left;
+        margin-left: 50px;
     }
 }
 
