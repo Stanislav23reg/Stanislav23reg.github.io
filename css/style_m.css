@@ -400,9 +400,15 @@ footer {
 
 
 @media screen and (min-width: 768px), (orientation: landscape) {
-    header {
-    background: red;
-}
+    .header_logo {
+        display: flex;
+        justify-content: center;
+    }
+    .header_logo img {
+        width: 160px;
+        height: 70px;
+        margin-right: 40px;
+    }
 }
 
 
