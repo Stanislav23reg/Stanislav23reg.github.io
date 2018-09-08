@@ -84,34 +84,22 @@ header {
 }
 .header_social a {
 	display: block;
+    height: 30px;
+	width: 30px;
 	margin: auto 10px;
+    background-size: contain;
+	background-repeat: no-repeat;
+	filter: grayscale(100%);
+    transition: 0.6s;
 }
 .header_vk {
-	height: 30px;
-	width: 30px;
 	background: url("../img/icon/vk_ico.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	filter: grayscale(100%);
-    transition: 0.6s;
 }
 .header_instagram {
-	height: 30px;
-	width: 30px;
 	background: url("../img/icon/instagram_ico.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	filter: grayscale(100%);
-    transition: 0.6s;
 }
 .header_youtube {
-	height: 30px;
-	width: 30px;
 	background: url("../img/icon/youtube_ico.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	filter: grayscale(100%);
-    transition: 0.6s;
 }
 .header_vk:hover,
 .header_instagram:hover,
