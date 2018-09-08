@@ -380,7 +380,7 @@ footer {
 
 
 
-@media (min-device-width: 321px) {
+@media (min-width: 321px) {
     .index_contact_form span {
         display: flex;
     }
