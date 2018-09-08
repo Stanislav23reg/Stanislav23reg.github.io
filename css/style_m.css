@@ -380,7 +380,7 @@ footer {
 
 
 
-@media (min-width: 321px) {
+@media screen and (min-width: 321px) {
     .index_contact_form span {
         display: flex;
     }
@@ -388,13 +388,26 @@ footer {
         content: "";
         background: url("../img/icon/edit.png");
         display: block;
-        height: 42px;
-        width: 42px;
+        height: 50px;
+        width: 50px;
         background-size: contain;
         background-repeat: no-repeat;
         margin-right: 10px;
         filter: invert(1);
     }
+}
+
+
+
+@media screen and (min-width: 768px), (orientation: landscape) {
+    header {
+    background: red;
+}
+}
+
+
+@media screen and (min-width: 1024px) {
+    
 }
 /*
 
