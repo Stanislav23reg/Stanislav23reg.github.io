@@ -36,15 +36,6 @@ header {
 
 
 
-
-
-
-
-
-
-
-/*мобилка*/
-@media screen and (max-width: 767px) {
     .content_caption {
         text-align: center;
     }
@@ -328,11 +319,13 @@ header {
         display: none;
     }
     .footer_social {
+        width: 250px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         list-style-type: none;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
+        
     }
     .footer_social a {
         display: block;
@@ -367,14 +360,13 @@ header {
     .footer_tel {
         display: none;
     }
-    @media screen and (min-width: 321px) {
+    @media screen and (min-width: 321.98px) {
         .header_tel a {
             font-size:22px;
         }
         .header_tel a:before {
             height: 22px;
             width: 22px;
-
         }
         .index_contact_form span {
             display: flex;
@@ -393,12 +385,37 @@ header {
             filter: invert(1);
         }
     }
-    @media screen and (orientation: landscape) {
-        body {
-            background: green;
+    @media screen and (min-width: 599.98px) {
+        .content_caption {
+            text-align: left;
+            margin-left: 50px;
+        }
+        .header_logo {
+            display: flex;
+            justify-content: center;
+        }
+        .header_logo img {
+            width: 190px;
+            height: 83px;
+            margin-right: 25px;
+        }
+        .offer_wrapper {
+            position: relative;
+            height: 0;
+            border: none;
+            padding-top: 48.2%;
+        }
+        .offer_content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: url(../img/offer/offer.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
-}
 
 
 
@@ -407,43 +424,15 @@ header {
 
 
 
-/*планшет*/
-@media screen and (min-width: 768px) and (max-width: 1239px) {
+
+
+@media screen and (min-width: 768px) and (max-width: 1239.98px) {
     body {
         background: yellow;
     }
-    .header_logo {
-        display: flex;
-        justify-content: center;
-    }
-    .header_logo img {
-        width: 160px;
-        height: 70px;
-        margin-right: 20px;
-    }
-    .header_logo_name {
-        margin: auto 0;
-    }
-    .offer_wrapper {
-        position: relative;
-        height: 0;
-        border: none;
-        padding-top: 48.2%;
-    }
-    .offer_content {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: url(../img/offer/offer.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .content_caption {
-        text-align: left;
-        margin-left: 50px;
-    }
+    
+    
+    
 }
 
 
