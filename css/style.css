@@ -420,12 +420,20 @@ header {
         margin: auto 0;
     }
     .offer_wrapper {
+        position: relative;
+        height: 0;
+        border: none;
         padding-top: 48.2%;
     }
     .offer_content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
         background: url(../img/offer/offer.jpg);
         background-size: contain;
-	    background-repeat: no-repeat;
+        background-repeat: no-repeat;
     }
     .content_caption {
         text-align: left;
