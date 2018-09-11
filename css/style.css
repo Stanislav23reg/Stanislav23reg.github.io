@@ -128,6 +128,9 @@ header {
         display: none;
         width: 100%;
         text-align: center;
+        position: fixed;
+        top: 0;
+        right: 0;
         z-index: 4;
     }
     nav ul {
@@ -147,14 +150,9 @@ nav li:last-child {
 }
 #nav_burger:checked ~ nav {
     display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
 }
 #nav_burger:checked ~ .nav_burger_wrapper {
     background: url("../img/icon/close_menu_ico.png");
-    height: 32px;
-    width: 32px;
     background-size: contain;
 }
 .menu a {
@@ -309,12 +307,11 @@ nav li:last-child {
         content: "";
         background: url("../img/icon/question.png");
         display: block;
-        margin: auto 0;
+        margin: auto 10px auto 0;
         height: 25px;
         width: 25px;
         background-size: contain;
         background-repeat: no-repeat;
-        margin-right: 10px;
         filter: invert(1);
     }
     .footer_social li:first-child {
@@ -327,7 +324,6 @@ nav li:last-child {
         list-style-type: none;
         margin: 0 auto;
         padding: 0;
-        
     }
     .footer_social a {
         display: block;
@@ -356,13 +352,14 @@ nav li:last-child {
         color: #fff;
         background: #464646;
         text-align: center;
+        text-transform: capitalize;
     }
     .footer_team,
     .footer_service,
     .footer_tel {
         display: none;
     }
-    @media screen and (min-width: 320.02px) {
+@media screen and (min-width: 320.02px) {
         .header_tel a {
             font-size:22px;
         }
@@ -390,7 +387,7 @@ nav li:last-child {
 @media screen and (min-width: 600px) {
     .content_caption {
         text-align: left;
-        margin-left: 30px;
+        margin-left: 50px;
     }
     .header_logo {
         display: flex;
@@ -405,50 +402,56 @@ nav li:last-child {
         text-align: left;
     }
     nav {
-        width: 50%;
+        width: 400px;
+        top: 3px;
+        right: 3px;
+        box-shadow: 0 0 7px #000;
     }
-        .offer_wrapper {
-            position: relative;
-            height: 0;
-            border: none;
-            padding-top: 48.2%;
-        }
-        .offer_content {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: url(../img/offer/offer.jpg);
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        .service {
-            width: 600px;
-            margin: 0 auto;
-        }
-        .service_card {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px;
-            width: 253px;
-        }
-        .service img {
-            width: 100%;
-            height: auto;
-        }
-        .index_contact_form div {
-            width: 560px;
-            margin: 0 auto;
-        }
-        .submit {
-            margin: 20px 0;
-        }
-        .index_map_m {
-            width: 600px;
-            margin: 0 auto;
-        }
+    #nav_burger:checked ~ .nav_burger_wrapper {
+        top: 6px;
     }
+    .offer_wrapper {
+        position: relative;
+        height: 0;
+        border: none;
+        padding-top: 48.2%;
+    }
+    .offer_content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url(../img/offer/offer.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .service {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .service_card {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        width: 253px;
+    }
+    .service img {
+        width: 100%;
+        height: auto;
+    }
+    .index_contact_form div {
+        width: 560px;
+        margin: 0 auto;
+    }
+    .submit {
+        margin: 20px 0;
+    }
+    .index_map_m {
+        width: 600px;
+        margin: 0 auto;
+    }
+}
 @media screen and (min-width: 895px) {
     header {
         margin-top: 70px;
@@ -468,10 +471,6 @@ nav li:last-child {
         height: 45px;
         width: 45px;
     }
-    #nav_burger:checked ~ .nav_burger_wrapper {
-        height: 45px;
-        width: 45px;
-    }
     nav {
         width: 40%;
     }
@@ -481,6 +480,24 @@ nav li:last-child {
     }
     .service {
         width: 895px;
+    }
+    .footer_middle {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer_mail {
+        margin-bottom: 0;
+        height: 45px;
+        line-height: 45px;
+        font-size: 24px;
+    }
+    .footer_mail:before {
+        height: 35px;
+        width: 35px;
+        background-size: contain;
+    }
+    .footer_social {
+        margin: 0;
     }
 }
 
