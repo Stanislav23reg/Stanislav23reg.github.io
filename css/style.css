@@ -31,14 +31,9 @@ header {
     border-bottom: 1px solid #D3D3D3;
     box-shadow: 0 6px 6px -4px #DCDCDC;
 }
-
-
-
-
-
-    .content_caption {
-        text-align: center;
-    }
+.content_caption {
+    text-align: center;
+}
     header {
         margin-top: 54px;
         text-align: center;
@@ -95,7 +90,7 @@ header {
     }
     .header_tel a {
         display: flex;
-        margin: auto 48px;
+        margin: auto 0;
         color: #000;
         font-weight: bold;
         font-family: sans-serif;
@@ -125,13 +120,12 @@ header {
         background-size: contain;
         display: block;
         position: fixed;
-        left: 12px;
+        right: 12px;
         top: 3px;
         z-index: 5;
     }
     nav {
         display: none;
-        background-color: #F5F5F5;
         width: 100%;
         text-align: center;
         z-index: 4;
@@ -142,31 +136,39 @@ header {
     }
     nav li {
         list-style-type: none;
-    }
-    #nav_burger {
-        display: none;
-    }
-    #nav_burger:checked ~ nav {
-        display: block;
-        position: fixed;
-        top: 0;
-        right: 0;
-    }
-    #nav_burger:checked ~ .nav_burger_wrapper {
-        background: url("../img/icon/close_menu_ico.png");
-        height: 32px;
-        width: 32px;
-        background-size: contain;
-    }
-    .menu a {
-        display: block;
-        padding: 6px;
-        color: #000;
-        text-transform: uppercase;
-        font-family: sans-serif;
         border-bottom: 4px solid #fff;
-        font-size: 22px;
+        background: #F5F5F5;
     }
+nav li:last-child {
+    border-bottom: none;
+}
+#nav_burger {
+    display: none;
+}
+#nav_burger:checked ~ nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#nav_burger:checked ~ .nav_burger_wrapper {
+    background: url("../img/icon/close_menu_ico.png");
+    height: 32px;
+    width: 32px;
+    background-size: contain;
+}
+.menu a {
+    display: block;
+    padding: 6px;
+    color: #000;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+.menu_table a {
+    color: #DDA0DD;
+    font-weight: bold;
+}
     .offer_wrapper {
         position: relative;
         height: 0;
@@ -385,23 +387,26 @@ header {
             filter: invert(1);
         }
     }
-    @media screen and (min-width: 600px) {
-        .content_caption {
-            text-align: left;
-            margin-left: 30px;
-        }
-        .header_logo {
-            display: flex;
-            justify-content: center;
-        }
-        .header_logo img {
-            width: 190px;
-            height: 83px;
-            margin-right: 25px;
-        }
-        .header_logo_name {
-            text-align: left;
-        }
+@media screen and (min-width: 600px) {
+    .content_caption {
+        text-align: left;
+        margin-left: 30px;
+    }
+    .header_logo {
+        display: flex;
+        justify-content: center;
+    }
+    .header_logo img {
+        width: 190px;
+        height: 83px;
+        margin-right: 25px;
+    }
+    .header_logo_name {
+        text-align: left;
+    }
+    nav {
+        width: 50%;
+    }
         .offer_wrapper {
             position: relative;
             height: 0;
@@ -439,12 +444,45 @@ header {
         .submit {
             margin: 20px 0;
         }
-    }
-    @media screen and (min-width: 895px) {
-        .service {
-            width: 895px;
+        .index_map_m {
+            width: 600px;
+            margin: 0 auto;
         }
     }
+@media screen and (min-width: 895px) {
+    header {
+        margin-top: 70px;
+    }
+    .header_tel {
+        height: 50px;
+    }
+    .header_tel a {
+        font-size: 24px;
+    }
+    .header_tel a:before {
+        height: 24px;
+        width: 24px;
+        margin-right: 15px;
+    }
+    .nav_burger_wrapper {
+        height: 45px;
+        width: 45px;
+    }
+    #nav_burger:checked ~ .nav_burger_wrapper {
+        height: 45px;
+        width: 45px;
+    }
+    nav {
+        width: 40%;
+    }
+    .menu a {
+        padding: 10px;
+        font-size: 24px;
+    }
+    .service {
+        width: 895px;
+    }
+}
 
 
 
