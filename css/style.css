@@ -249,24 +249,21 @@ nav li:last-child {
         color: #000;
         background: #fff;
     }
-    .index_map {
-        display: none;
-    }
-    .index_map_m_wrapper {
+    .index_map_wrapper {
         position: relative;
         height: 0;
         border: none;
-        padding-top: 72.5%;
+        padding-top: 124%;
     }
-    .index_map_m_content {
+    .index_map_content {
+        width: 100%;
+        height: 100%;
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        background: url(../img/map_m.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
+        display: block;
     }
     footer {
         width: 100%;
@@ -459,9 +456,8 @@ nav li:last-child {
     .submit {
         margin: 20px 0;
     }
-    .index_map_m {
-        width: 600px;
-        margin: 0 auto;
+    .index_map_wrapper {
+        padding-top: 48.2%;
     }
 }
 @media screen and (min-width: 895px) {
@@ -839,25 +835,6 @@ nav li:last-child {
     }
     .service_card:hover .service_name {
         color: #a9a9a9;
-    }
-    .index_map_m_content {
-        display: none;
-    }
-    .index_map_m_wrapper {
-        padding-top: 48.2%;
-    }
-    .index_map_m {
-        width: 100%;
-    }
-    .index_map {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: block;
     }
     .footer_tel {
         pointer-events: none;
