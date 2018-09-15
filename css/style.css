@@ -162,13 +162,18 @@ nav a {
     font-family: sans-serif;
     font-size: 22px;
 }
-nav li:first-child a:first-child {
-    color: #DDA0DD;
-    font-weight: bold;
-}
 .nav_active {
+    background: #DCDCDC;
+}
+.nav_active a {
+    pointer-events: none;
+    font-weight: bold;
+    color: #a9a9a9;
+}
+.breadcrumbs {
     display: none;
 }
+
     .offer_wrapper {
         position: relative;
         height: 0;
@@ -390,22 +395,23 @@ nav li:first-child a:first-child {
     tr:first-child {
         font-weight: bold;
         padding: 15px 0;
+        background: #EEEAE3;
     }
     .table_trainer {
         font-size: 0.8em;
         margin-top: 6px;
     }
     .table_pole_dance a {
-        background: darksalmon;
+        background: #DCB5B4;
     }
     .table_aerial_silks a {
-        background: burlywood;
+        background: #DB7093;
     }
     .table_exotic a {
-        background: pink;
+        background: #FFC0CB;
     }
     .table_stretching a {
-        background: coral;
+        background: #F28085;
     }
 @media screen and (min-device-width: 320.02px) {
         .header_tel a {
@@ -673,15 +679,47 @@ nav li:first-child a:first-child {
     nav a:active {
         color: #888;
     }
+    .nav_home {
+        display: none;
+    }
     .nav_active {
         background: linear-gradient(to bottom right, #F7F3F2 40%, #fff);
-        display: block;
     }
     .nav_active a {
         pointer-events: none;
         cursor: default;
     }
-    main {
+    .breadcrumbs {
+        display: block;
+        margin-left: 30px;
+        margin-top: 30px;
+        list-style-type: none;
+    }
+    .breadcrumbs li {
+        display: inline-block;
+        color:  #989898;
+        font-size: 14px;
+    }
+    .breadcrumbs li::after {
+        content: '»';
+        margin-left: 5px;
+    }
+    .breadcrumbs li:last-child::after {
+        content: '';
+    }
+    .breadcrumbs li:last-child {
+        text-decoration: underline;
+    }
+    .breadcrumbs a {
+        color:  #989898;
+    }
+    .breadcrumbs a:hover {
+        color: #000;
+    }
+    .breadcrumbs a:active {
+        color: grey;
+    }
+    .content_right {
         width: 100%;
     }
     .service {
@@ -829,7 +867,7 @@ nav li:first-child a:first-child {
 
 /*комп*/
 @media screen and (min-device-width: 1240px) {
-    header {
+    body {
         min-width: 1100px;
     }
     .header_adres:hover {
@@ -912,13 +950,23 @@ nav li:first-child a:first-child {
     .footer_tel:before {
         display: none;
     }
+    .footer_team a:hover,
+    .footer_service a:hover {
+        color: #fff;
+    }
+    .footer_vk:hover,
+    .footer_instagram:hover,
+    .footer_youtube:hover {
+        filter: brightness(1.2);
+    }
     .footer_creator a:hover {
         color: #a9a9a9;
     }
-    
-    
-    
-    table
+    @media screen and (max-width: 1196px) {
+        .service {
+            width: 600px;
+        }
+    }
     
     
     
