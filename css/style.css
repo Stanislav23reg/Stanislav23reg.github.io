@@ -137,6 +137,7 @@ header {
         top: 0;
         right: 0;
         z-index: 4;
+        overflow-x: auto;
     }
 nav li {
     border-bottom: 4px solid #fff;
@@ -204,8 +205,7 @@ nav a {
     .service_name {
         display: block;
         color: #000;
-        text-transform: capitalize;
-        font-size: 24px;
+        font-size: 22px;
         font-weight: bold;
         font-family: sans-serif;
         margin: 20px 0;
@@ -357,8 +357,7 @@ nav a {
         justify-content: center;
         color: #fff;
     }
-    .footer_team,
-    .footer_service,
+    .footer_nav,
     .footer_tel,
     .footer_creator {
         display: none;
@@ -766,12 +765,10 @@ nav a {
     .footer_mail:active {
         color: #000;
     }
-    .footer_team,
-    .footer_service {
+    .footer_nav {
         display: block;
     }
-    .footer_team li:first-child,
-    .footer_service li:first-child,
+    .footer_nav li:first-child,
     .footer_social li:first-child {
         font-size: 20px;
         font-weight: 550;
@@ -780,18 +777,14 @@ nav a {
         margin-bottom: 20px;
         display: list-item;
     }
-    .footer_team li,
-    .footer_service li,
+    .footer_nav li,
     .footer_social li {
         margin-top: 10px;
     }
-    .footer_team a,
-    .footer_service a {
+    .footer_nav a {
         color: #D3D3D3;
-        text-transform: capitalize;
     }
-    .footer_team a:active,
-    .footer_service a:active {
+    .footer_nav a:active {
         color: #000;
     }
     .footer_social {
@@ -953,8 +946,7 @@ nav a {
     .footer_tel:before {
         display: none;
     }
-    .footer_team a:hover,
-    .footer_service a:hover {
+    .footer_nav a:hover {
         color: #fff;
     }
     .footer_mail:hover {
