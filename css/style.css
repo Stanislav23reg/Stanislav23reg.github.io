@@ -576,9 +576,10 @@ tr:first-child {
   background: #F28085;
 }
 
-.banner {
-  width: 100%;
-}
+.service_banner {
+    width: 100%;
+    height: 100%;
+  }
 
 .table_service a {
   cursor: default;
@@ -603,7 +604,7 @@ tr:first-child {
   display: block;
 }
 
-@media screen and (min-device-width: 375px) {
+@media screen and (min-device-width: 320.5px) {
   .header_tel a {
     font-size: 22px;
   }
@@ -733,6 +734,30 @@ tr:first-child {
 
   .index_map_wrapper {
     padding-top: 48.2%;
+  }
+  
+  .service_top_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .service_banner {
+    width: 50%;
+    height: 50%;
+  }
+  
+  details .content_caption {
+    margin-left: 0;
+  }
+  
+  summary {
+    text-align: right;
+    margin-right: 80px;
+    font-size: 19px;
+  }
+  
+  section {
+    margin: 0 50px;
   }
 
 }
