@@ -38,6 +38,7 @@ summary {
   text-align: right;
   margin-right: 15px;
   color: #666;
+  cursor: default;
 }
 
 ul {
@@ -604,6 +605,12 @@ tr:first-child {
   display: block;
 }
 
+.clothes li {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
 @media screen and (min-device-width: 320.5px) {
   .header_tel a {
     font-size: 22px;
@@ -738,12 +745,17 @@ tr:first-child {
   
   .service_top_wrapper {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .service_top_wrapper section {
+    width: 50%;
   }
   
   .service_banner {
     width: 50%;
     height: 50%;
+    margin-left: 50px;
   }
   
   details .content_caption {
@@ -826,6 +838,32 @@ tr:first-child {
   .footer_social {
     margin: auto 0;
   }
+  
+  .service_top_wrapper {
+    align-items: flex-start;
+  }
+  
+  .details_wrapper {
+    display: flex;
+  }
+  
+  .details_left,
+  .details_right {
+    width: 50%;
+  }
+  
+  .details_left section {
+    margin-right: 0;
+  }
+  
+  .details_right section {
+    margin-left: 0;
+  }
+  
+  .details_left {
+    margin-right: 50px;
+  }
+  
 }
 
 @media screen and (min-device-width: 1024px) {
