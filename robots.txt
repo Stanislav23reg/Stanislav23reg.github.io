@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: http://stanislav23reg.github.io/sitemap.xml
