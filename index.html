@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header>
     <div class="header_top">
       <a href="#" class="header_logo"><img src="img/logos.png" alt="logos" height="56" width="64">Waxom</a>
-      <nav>
-        <input type="checkbox" id="nav_burger_box">
-        <label for="nav_burger_box" class="nav_burger">
-          <div class="nav_burger_top"></div>
-          <div class="nav_burger_medium"></div>
-          <div class="nav_burger_bottom"></div>
-        </label>
-        <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Shortcodecs</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="header_basket"></a>
+      <div class="header_top_right">
+        <nav>
+          <input type="checkbox" id="nav_burger_box">
+          <label for="nav_burger_box" class="nav_burger">
+            <span class="nav_burger_top"></span>
+            <span class="nav_burger_medium"></span>
+            <span class="nav_burger_bottom"></span>
+          </label>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Shortcodecs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="header_basket"></a>
+        <form action="" class="header_search">
+          <input type="search">
+        </form>
+      </div>
     </div>
   </header>
   <main>
@@ -55,9 +62,22 @@
       </a>
     </section>
     <section class="realization">
-     <h2>Waxom is realization of your ideas</h2>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab minus inventore, atque esse molestiae, incidunt? Officia, doloribus, dignissimos rerum suscipit nobis numquam voluptates assumenda quibusdam cupiditate mollitia nam. Asperiores.</p>
+      <h2>Waxom is realization of your ideas</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab minus inventore, atque esse molestiae, incidunt? Officia, doloribus, dignissimos rerum suscipit nobis numquam voluptates assumenda quibusdam cupiditate mollitia nam. Asperiores.</p>
+      <div class="realization_box">
+         <img src="img/browser-left.png" alt="" class="realization_box_banner banner_left">
+         <img src="img/browser-center.png" alt="" class="realization_box_banner banner_center">
+         <img src="img/browser-right.png" alt="" class="realization_box_banner banner_right">
+      </div>
+      <div class="realization_bottom">
+        <div class="realization_bottom_left">
+          <span class="realization_bottom_left_txt1"><span>Waxom</span> multipurpose wordpress theme</span>
+          <span class="realization_bottom_left_txt2">Don't forget to rate the template. Thanks so moch!</span>
+        </div>
+        <button>Purchase now</button>
+      </div>
     </section>
   </main>
 </body>
+
 </html>
